@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { ClipboardJS } from '../../../assets/clipboard/clipboard.js-master/dist/clipboard.min.js';
 declare var $:any;
 
 @Component({
