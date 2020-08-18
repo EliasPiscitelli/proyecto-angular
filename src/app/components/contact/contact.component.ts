@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ClipboardJS } from '../../../assets/clipboard/clipboard.js-master/dist/clipboard.min.js';
+import { ClipboardJS } from '../../../../node_modules/clipboard/dist/clipboard.min.js';
 declare var $:any;
 
 @Component({
@@ -44,7 +44,7 @@ export class ContactComponent implements OnInit {
 
 
 var btn = document.getElementById('#copy-button');
-var clipboard = new clipboard('#copy-button');
+var clipboard = new ClipboardJS('#copy-button');
 
  clipboard.on('success', function(e) {
         console.log(e);
